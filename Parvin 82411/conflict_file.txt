@@ -1,0 +1,3 @@
+Creating new conflict file
+Hello
+V2
