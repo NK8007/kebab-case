@@ -1,0 +1,4 @@
+qwerty asdf zxcv
+banana orange kiwi 42
+hjkl uiop nmbv
+random line for the merge conflict exercise
