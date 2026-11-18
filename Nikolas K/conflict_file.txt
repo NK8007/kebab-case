@@ -1,4 +1,5 @@
 This is just an example of conflict in the file.
 It demonstrates how changes from different branches can overlap and cause conflicts.
-PROSPER MANJEYA 87512 changed this line to create a conflict.
-PROSPER MANJEYA CONFLICT
+Resolving these conflicts requires careful consideration of the changes made in each branch.
+Making test
+PROSPER MANJEYA CONFLICT - resolved by Prosper Manjeya 87512 (kept both changes)
