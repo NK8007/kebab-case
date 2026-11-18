@@ -3,3 +3,4 @@ This is just an example of conflict in the file.
 It demonstrates how changes from different branches can overlap and cause conflicts.
 Gorkem changed this line.
 Gorkem test
+gorkem-branch-4: changed to create a conflict
