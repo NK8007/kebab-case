@@ -3,5 +3,8 @@ It demonstrates how changes from different branches can overlap and cause confli
 
 creating some more
 
+I want to have conflict!!!;
+
+super puper one 
 I want to have conflict!!!
 test
