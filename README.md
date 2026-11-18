@@ -6,31 +6,40 @@ This repository contains a utility for converting strings to kebab-case format. 
 
 ## Usage
 
-To use this utility, simply import the function and pass the string you want to convert:
+### Command line
 
-```javascript
-import { toKebabCase } from 'kebab-case';
+```sh
+go run . "Hello World"
+# hello-world
 
-const result = toKebabCase('Hello World');
-console.log(result); // Output: hello-world
+go run . getHTTPResponseCode
+# get-http-response-code
+```
+
+### In Go
+
+```go
+result := ToKebabCase("Hello World")
+fmt.Println(result) // hello-world
 ```
 
 ## API
 
-### `toKebabCase(input: string): string`
+### `ToKebabCase(s string) string`
 
 Converts the given string to kebab-case.
 
-#### Parameters
+Words are split on:
 
-- `input` (string): The string to convert.
+- spaces, punctuation, underscores and existing hyphens (`hello_world` → `hello-world`)
+- lower-to-upper case changes (`helloWorld` → `hello-world`)
+- the end of an acronym (`HTTPServer` → `http-server`)
+- changes between letters and digits (`version2` → `version-2`)
 
-#### Returns
+Repeated or leading/trailing separators are collapsed, and non-ASCII letters are supported (`ÉcoleNormale` → `école-normale`).
 
-- (string): The kebab-case formatted string.    
-- Example:
+## Running the tests
 
-```javascript
-toKebabCase('Hello World'); // Output: 'hello-world'
-``` 
-
+```sh
+go test ./...
+```
