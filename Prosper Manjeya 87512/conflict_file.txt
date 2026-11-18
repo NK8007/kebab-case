@@ -1,4 +1,5 @@
 qwerty asdf zxcv
-banana orange kiwi 42
+PROSPER MANJEYA CONFLICT - changed this line
+banana orange kiwi 87512
 hjkl uiop nmbv
-random line for the merge conflict exercise
+another random line edited on the conflict branch
