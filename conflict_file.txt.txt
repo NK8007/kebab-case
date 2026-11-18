@@ -1,1 +1,2 @@
 We'll make a conflict.
+This will create a situation where changes from different branches can conflict.
